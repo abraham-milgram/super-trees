@@ -7,7 +7,7 @@ def makedata(f, length):
     processed = {}
     f.seek(0)
     categories = f.readline().strip('\n').split(',')
-
+    
     first = True
     for id, line in enumerate(f):
         if first:
