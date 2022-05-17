@@ -2,12 +2,12 @@ import re
 import csv
 from decimal import *
 t2015 = open(r"trees.csv", 'r', encoding="utf8")
-
+var = True
 def makedata(f, length):
     processed = {}
     f.seek(0)
     categories = f.readline().strip('\n').split(',')
-    
+
     first = True
     for id, line in enumerate(f):
         if first:
